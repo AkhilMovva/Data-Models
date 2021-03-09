@@ -1,0 +1,8 @@
+{
+        "rfw_id":12345,
+		"benchmark_type" :"DVD-training",
+		"workload_metric":"NetworkIn_Average",
+		"batch_unit":2,
+		"batch_id":1,
+		"batch_size":1
+    }
