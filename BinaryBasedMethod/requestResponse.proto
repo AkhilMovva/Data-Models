@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+service requestResponse{
+  // A simple RPC.
+  //
+  // Obtains the MessageResponse at a given position.
+ rpc GetServerResponse(Message) returns (MessageResponse) {}
+
+}
+
+message Message{
+  int32 rfwID = 1;
+  string benchmarkType = 2;
+  string workloadMetric = 3;
+  int32 batchUnit = 4;
+  int32 batchID = 5; 
+  int32 batchSize = 6;
+}
+
+message MessageResponse{
+ int32 rfwID = 1;
+ int32 lastbatchID = 2;
+ repeated string samples =3;
+}
